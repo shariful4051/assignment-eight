@@ -5,12 +5,13 @@ import Home from '../component/Pages/Home';
 import Apps from '../component/Apps';
 import Installation from '../component/Installation';
 import CardDetails from '../component/Pages/CardDetails';
+import Error from '../component/Pages/Error';
 
 const Router = createBrowserRouter([
     {
         path:'/',
         Component:Root,
-       // errorElement:<p>page not found</p>,
+        errorElement:<Error></Error>,
         children:[
            {
             index:true,
@@ -24,7 +25,8 @@ const Router = createBrowserRouter([
            },
            {
             path:'/install',
-            Component:Installation
+            Component:Installation,
+             loader:()=>fetch('../Apps.json')
            },
            {
             path:'/cardDetails/:id',

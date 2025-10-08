@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import Download from '../../../assets/icon-downloads.png'
 import Review from '../../../assets/icon-review.png'
 import Rating from '../../../assets/icon-ratings.png'
 import { Bar, BarChart, XAxis, YAxis } from 'recharts';
+import { addCartLS } from '../../../utilities/LocalStorage';
 
 
 const CardDetails = () => {
@@ -15,6 +16,16 @@ const CardDetails = () => {
     const singleApp = apps.find(app=>app.id ==appId)
     const rating = singleApp.ratings;
     console.log(rating);
+    const [install,setInstall] = useState(false)
+
+    const handleInstall =(id)=>{
+
+        setInstall(!install)
+
+        addCartLS(id);
+
+
+    }
     return (
         <div>
 
@@ -52,7 +63,7 @@ const CardDetails = () => {
             </div>
 
                   <div>
-                    <button className='bg-[#00D390] text-white font-semibold px-5 py-3.5 rounded-md'>Install Now({singleApp.size}MB)</button>
+                    <button onClick={()=>handleInstall(singleApp.id)} className={`${install&&'disabled'} bg-[#00D390] text-white font-semibold px-5 py-3.5 rounded-md`}>{install?'Installed':'Install Now'}</button>
                 </div>
 
            </div>
