@@ -1,0 +1,163 @@
+[
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 1,
+    "description": "Connect with friends and the world around you on Facebook.",
+    "size": 50,
+    "reviews": 174000000,
+    "ratingAvg": 4.5,
+    "downloads": "100M",
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 800000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/NN8G4Xc03GSv2_Tu-icuoeOwSo1xoZ4ouzUl24fVlwm5OeIAo7gV0zS1dVRWgCay-BU=w240-h480-rw",
+    "title": "Google",
+    "companyName": "Google LLC",
+    "id": 2,
+    "description": "Search the world's information, including webpages, images, videos, and more.",
+    "size": 25,
+    "reviews": 120000000,
+    "ratingAvg": 4.6,
+    "downloads": "110M",
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 500000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1690563762819-bf3ae53ab662?q=80&w=1162&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Twitter",
+    "companyName": "Twitter, Inc.",
+    "id": 3,
+    "description": "See what's happening in the world right now.",
+    "size": 30,
+    "reviews": 100000000,
+    "ratingAvg": 4.3,
+    "downloads": "200M",
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 400000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1707061229220-ec87359ac0b7?q=80&w=881&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Messenger",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 4,
+    "description": "An app to send messages, make voice and video calls.",
+    "size": 30,
+    "reviews": 150000000,
+    "ratingAvg": 4.4,
+    "downloads": "300M",
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 350000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1633675254386-dc5bb4279d56?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 5,
+    "description": "Capture and share the world's moments.",
+    "size": 40,
+    "reviews": 200000000,
+    "ratingAvg": 4.7,
+    "downloads": "400M",
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 300000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1644035772775-8e26685ad2f0?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "WhatsApp Messenger",
+    "companyName": "WhatsApp Inc.",
+    "id": 6,
+    "description": "Simple. Personal. Secure.",
+    "size": 35,
+    "reviews": 250000000,
+    "ratingAvg": 4.8,
+    "downloads": "50M",
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 100000 },
+      { "name": "5 star", "count": 150000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1633431406066-27dc4345ca98?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 7,
+    "description": "Life's more fun when you live in the moment.",
+    "size": 30,
+    "reviews": 120000000,
+    "ratingAvg": 4.2,
+    "downloads": "60M",
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 400000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "companyName": "Spotify Ltd.",
+    "id": 8,
+    "description": "Music for everyone.",
+    "size": 50,
+    "reviews": 180000000,
+    "ratingAvg": 4.5,
+    "downloads": "132M",
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 300000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "companyName": "Netflix, Inc.",
+    "id": 9,
+    "description": "Enjoy the latest TV shows and movies.",
+    "size": 60,
+    "reviews": 140000000,
+    "ratingAvg": 4.4,
+    "downloads": 10000,
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 350000 }
+    ]
+  }
+]
+  

@@ -1,11 +1,12 @@
 
 import { Github } from 'lucide-react';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router';
 import Logo from './../../../assets/logo.png'
 
 
 const Navbar = () => {
+  const [menu,setMenu] =useState('Home')
   
     return (
        <div className="navbar bg-base-100 shadow-sm">
@@ -30,18 +31,18 @@ const Navbar = () => {
 
       </ul>
     </div>
-   <Link to='/'> <a className="btn btn-ghost text-xl"> <span><img className='w-[40px] h-[40px]' src={Logo} alt="" /></span> <span className='text-[#9F62F2] text-[16px] font-bold'> HERO.IO</span></a></Link>
+   <Link to='/'> <a className="btn btn-ghost text-xl" onClick={()=>setMenu('Home')}> <span><img className='w-[40px] h-[40px]' src={Logo} alt="" /></span> <span className='text-[#9F62F2] text-[16px] font-bold'> HERO.IO</span></a></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal  items-center px-1">
       <NavLink to="/">
-        <li className='font-medium text-[#000000]'><a>Home</a></li>
+        <li className={`font-medium text-[#000000] ${menu==='Home'&& 'text-[#9F62F2]  border-b'}`} onClick={()=>setMenu('Home')}><a>Home</a></li>
         </NavLink>
        <NavLink to='/apps'>
-        <li className='font-medium text-[#000000]'>Apps</li>
+        <li className={`font-medium text-[#000000] ${menu==='Apps'&& 'text-[#9F62F2]  border-b'}`} onClick={()=>setMenu('Apps')} >Apps</li>
         </NavLink>
        <NavLink to='/install'>
-        <li className='font-medium text-[#000000]'><a>Installation</a></li>
+        <li className={`font-medium text-[#000000] ${menu==='Installation'&& 'text-[#9F62F2]  border-b'}`} onClick={()=>setMenu('Installation')}><a>Installation</a></li>
         </NavLink>
     </ul>
   </div>
