@@ -3,7 +3,7 @@ import Icon from '../../../assets/icon-downloads.png'
 import Rating from '../../../assets/icon-ratings.png'
 
 const AppsHome = ({app}) => {
-    console.log(app);
+    //console.log(app);
     return (
 
         <div>
