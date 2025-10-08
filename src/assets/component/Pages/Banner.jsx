@@ -12,8 +12,8 @@ const Banner = () => {
                 <p className='md:text-[20px] text-[#627382] mb-8'>
                  AtHERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more <br /> exciting  Our goal is to turn your ideas into digital experiences that truly make an impact.   
                 </p>
-                <button className='font-semibold border-1 border-gray-400 px-4 py-3 mr-4'><a href=''>Google Play</a></button>
-                <button className='font-semibold border-1 border-gray-400 px-4 py-3'><a>App Store</a></button>
+                <button className='font-semibold border-1 border-gray-400 px-4 py-3 mr-4 rounded-[4px]'><a href=''>Google Play</a></button>
+                <button className='font-semibold border-1 border-gray-400 px-4 py-3 rounded-[4px]'><a>App Store</a></button>
             </div>
            <div className='mt-8'>
              <img className='mx-auto' src={BannerImg} alt="" />

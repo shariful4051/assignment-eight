@@ -13,6 +13,7 @@ const Router = createBrowserRouter([
         children:[
            {
             index:true,
+            loader:()=>fetch('../HomeApp.json'),
             Component:Home
            },
            {
