@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
-import { getCartFromLS} from '../../utilities/LocalStorage';
 import InstallApp from './Pages/InstallApp';
 
 const Installation = () => {
@@ -9,13 +8,14 @@ const Installation = () => {
 
     const [list,setList] =useState([])
     const allApps = useLoaderData()
-    useEffect(()=>{
-        const storedId = getCartFromLS();
-        const convertedId = storedId.map(id=>parseInt(id))
-        const installAppList = allApps.filter(app=>convertedId.includes(app.id))
-        setList(installAppList);
-    },[])
 
+
+    useEffect(()=>{
+        const saveList = JSON.parse(localStorage.getItem('install'))
+        if(saveList) setList(saveList)
+    },[])
+   
+    
 
      const[sortOrder,setSortOrder] = useState('none')
      
@@ -37,7 +37,7 @@ const Installation = () => {
                 <p className='my-2.5 text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>
             </div>
             <div className='flex justify-between items-center'>
-                <span className='text-2xl font-semibold text-black'>({list.length})App Found</span>
+                <span className='text-2xl font-semibold text-black'>({sortedItem.length})App Found</span>
 
                 <select className='select select-border' value={sortOrder} onChange={e=>setSortOrder(e.target.value)}>
                     <option value="none">Sort By Ratings</option>
@@ -47,7 +47,7 @@ const Installation = () => {
             </div>
             <div>
             {
-                sortedItem.map(x=><InstallApp key={x.id} x={x}></InstallApp>)
+                sortedItem.map(x=><InstallApp key={x.id} x={x} list={list} setList={setList}></InstallApp>)
             }
             </div>
         </div>

@@ -1,13 +1,22 @@
 import React from 'react';
-import { removeFromCartLs } from '../../../utilities/LocalStorage';
+
 import { ToastContainer,toast } from 'react-toastify';
 import Rating from '../../../assets/icon-ratings.png'
 
-const InstallApp = ({x}) => {
+const InstallApp = ({x,setList}) => {
+
     const handleRemove =(id)=>{
-        toast('App Uninstalled')
-        removeFromCartLs(id);
+
+        
+       
+
+        const existingList = JSON.parse(localStorage.getItem('install'))
+        let updatedList = existingList.filter(p=>p.id !=id)
+        setList(updatedList)
+        localStorage.setItem('install',JSON.stringify(updatedList))
+         toast('App Uninstalled')
     }
+    
 
     return (
         <div className='md:w-10/12 mx-4 '>

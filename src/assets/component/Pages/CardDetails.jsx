@@ -19,13 +19,23 @@ const CardDetails = () => {
    // console.log(rating);
     const [install,setInstall] = useState(false)
 
-    const handleInstall =(id)=>{
+    const handleInstall =()=>{
         toast('App Install');
 
 
         setInstall(!install)
 
-        addCartLS(id);
+        const existingList= JSON.parse(localStorage.getItem('install'))
+        let updatedList =[]
+        if(existingList){
+            updatedList = [...existingList,singleApp]
+
+        }else{
+            updatedList.push(singleApp)
+        }
+        localStorage.setItem('install',JSON.stringify(updatedList))
+
+       
         
 
 
@@ -76,10 +86,10 @@ const CardDetails = () => {
         </div>
 
         {/* rechart */}
-        <div className='my-10'>
+        <div className='my-10 md:mx-55'>
             <h1 className='font-semibold text-2xl my-3'>Ratings</h1>
             <div>
-             <BarChart width={400} height={400} data={rating}>
+             <BarChart width={300} height={400} data={rating}>
                 <XAxis dataKey={'name'}></XAxis>
                 <YAxis ></YAxis>
                 <Bar dataKey={'count'} fill='green'></Bar>
