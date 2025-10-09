@@ -4,6 +4,9 @@ import { getCartFromLS} from '../../utilities/LocalStorage';
 import InstallApp from './Pages/InstallApp';
 
 const Installation = () => {
+
+   
+
     const [list,setList] =useState([])
     const allApps = useLoaderData()
     useEffect(()=>{
@@ -12,6 +15,20 @@ const Installation = () => {
         const installAppList = allApps.filter(app=>convertedId.includes(app.id))
         setList(installAppList);
     },[])
+
+
+     const[sortOrder,setSortOrder] = useState('none')
+     
+     const sortedItem =(()=>{
+        if(sortOrder=='download1'){
+            return[...list].sort((a,b)=>a.ratingAvg-b.ratingAvg)
+        }else if(sortOrder=='download2'){
+            return [...list].sort((a,b)=>b.ratingAvg-a.ratingAvg)
+        }else{
+            return list
+        }
+     })();
+    
     
     return (
         <div className='max-w-[1200px] md:mx-auto mx-4'>
@@ -21,11 +38,16 @@ const Installation = () => {
             </div>
             <div className='flex justify-between items-center'>
                 <span className='text-2xl font-semibold text-black'>({list.length})App Found</span>
-                <span>Sort</span>
+
+                <select className='select select-border' value={sortOrder} onChange={e=>setSortOrder(e.target.value)}>
+                    <option value="none">Sort By Ratings</option>
+                    <option value="download1">Low to high</option>
+                    <option value="download2">High to Low</option>
+                </select>
             </div>
             <div>
             {
-                list.map(x=><InstallApp key={x.id} x={x}></InstallApp>)
+                sortedItem.map(x=><InstallApp key={x.id} x={x}></InstallApp>)
             }
             </div>
         </div>
