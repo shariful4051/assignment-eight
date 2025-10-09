@@ -5,6 +5,7 @@ import Review from '../../../assets/icon-review.png'
 import Rating from '../../../assets/icon-ratings.png'
 import { Bar, BarChart, XAxis, YAxis } from 'recharts';
 import { addCartLS } from '../../../utilities/LocalStorage';
+import {ToastContainer, toast } from 'react-toastify';
 
 
 const CardDetails = () => {
@@ -19,10 +20,13 @@ const CardDetails = () => {
     const [install,setInstall] = useState(false)
 
     const handleInstall =(id)=>{
+        toast('App Install');
+
 
         setInstall(!install)
 
         addCartLS(id);
+        
 
 
     }
@@ -63,7 +67,7 @@ const CardDetails = () => {
             </div>
 
                   <div>
-                    <button onClick={()=>handleInstall(singleApp.id)} className={`${install&&'disabled'} bg-[#00D390] text-white font-semibold px-5 py-3.5 rounded-md`}>{install?'Installed':'Install Now'}</button>
+                    <button disabled={install}  onClick={()=>handleInstall(singleApp.id)} className={`${install?'bg-gray-500 text-white font-semibold px-5 py-3.5 rounded-md':'bg-[#00D390] text-white font-semibold px-5 py-3.5 rounded-md'} `}>{install?'Installed':'Install Now'}</button>
                 </div>
 
            </div>
@@ -95,7 +99,7 @@ const CardDetails = () => {
               <Link to="/apps"><button className='cursor-pointer font-semibold text-white bg-[#00D390] rounded-md px-5 py-3'>Show All</button>
              </Link>
          </div>
-
+         <ToastContainer />
         </div>
     );
 };

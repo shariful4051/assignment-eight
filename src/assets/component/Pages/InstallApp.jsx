@@ -1,8 +1,10 @@
 import React from 'react';
 import { removeFromCartLs } from '../../../utilities/LocalStorage';
+import { ToastContainer,toast } from 'react-toastify';
 
 const InstallApp = ({x}) => {
     const handleRemove =(id)=>{
+        toast('App Uninstalled')
         removeFromCartLs(id);
     }
 
@@ -18,6 +20,7 @@ const InstallApp = ({x}) => {
             <button className='cursor-pointer font-semibold text-white bg-[#00D390] rounded-md px-5 py-3' onClick={()=>handleRemove(x.id)}>Uninstall</button>
            </div>
         </div>
+         <ToastContainer />
         </div>
     );
 };

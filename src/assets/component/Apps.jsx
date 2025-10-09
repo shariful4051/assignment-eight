@@ -12,7 +12,7 @@ const Apps = () => {
      
     
     return (
-        <div className='max-w-[1200px] Md:mx-auto mx-3.5 '>
+        <div className='max-w-[1200px] md:mx-auto mx-3.5 '>
             <h1 className='text-center md:text-5xl text-3xl font-bold text-black'>Our All Applications</h1>
             <p className='text-[#627382] text-center'>Explore All Apps on the Market developed by us. We code for Millions</p>
 
