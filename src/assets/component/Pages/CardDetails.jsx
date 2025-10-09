@@ -16,7 +16,7 @@ const CardDetails = () => {
     const apps =useLoaderData()
     const singleApp = apps.find(app=>app.id ==appId)
     const rating = singleApp.ratings;
-    console.log(rating);
+   // console.log(rating);
     const [install,setInstall] = useState(false)
 
     const handleInstall =(id)=>{

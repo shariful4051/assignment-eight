@@ -2,7 +2,7 @@ import React from 'react';
 import AppsHome from './AppsHome';
 
 const HomeApp = ({apps}) => {
-    console.log(apps)
+   // console.log(apps)
     return (
         <div className='w-11/12'>
              <h1 className='font-bold md:text-5xl text-3xl text-black text-center mt-16'> Trending Apps</h1>
