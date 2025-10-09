@@ -21,3 +21,6 @@ const removeFromCartLs =id=>{
     saveCartToLocalStorage(remainingCart)
 }
 export {getCartFromLS,addCartLS,removeFromCartLs}
+
+
+

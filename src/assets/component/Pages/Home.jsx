@@ -7,7 +7,7 @@ const Home = () => {
     const apps = useLoaderData();
     //console.log(apps);
     return (
-        <div>
+        <div className='mx-4'>
             <Banner></Banner>
             <HomeApp apps={apps}></HomeApp>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { Link, useLoaderData, useParams } from 'react-router';
 import Download from '../../../assets/icon-downloads.png'
 import Review from '../../../assets/icon-review.png'
 import Rating from '../../../assets/icon-ratings.png'
@@ -27,12 +27,12 @@ const CardDetails = () => {
 
     }
     return (
-        <div>
+        <div className='mx-3.5'>
 
 
         <div className='flex gap-10 md:flex-row flex-col'>
             <div>
-                <img className='h-[350px] w-[350px]' src={singleApp.image} alt="" />
+                <img className='h-[350px] md:w-[350px] w-full' src={singleApp.image} alt="" />
             </div>
 
            <div className='flex flex-col  justify-between'>
@@ -91,7 +91,10 @@ const CardDetails = () => {
             <h1 className='font-semibold text-2xl text-black'>Description</h1>
             <p>{singleApp.description}</p>
         </div>
-
+         <div className='text-center'>
+              <Link to="/apps"><button className='cursor-pointer font-semibold text-white bg-[#00D390] rounded-md px-5 py-3'>Show All</button>
+             </Link>
+         </div>
 
         </div>
     );

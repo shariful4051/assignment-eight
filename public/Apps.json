@@ -91,7 +91,7 @@
   },
   {
     "image": "https://images.unsplash.com/photo-1644035772775-8e26685ad2f0?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "title": "WhatsApp Messenger",
+    "title": "WhatsApp",
     "companyName": "WhatsApp Inc.",
     "id": 6,
     "description": "Simple. Personal. Secure.",
@@ -129,6 +129,7 @@
     "image": "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "companyName": "Spotify Ltd.",
     "id": 8,
+    "title":"Spotify",
     "description": "Music for everyone.",
     "size": 50,
     "reviews": 180000000,
@@ -146,17 +147,72 @@
     "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "companyName": "Netflix, Inc.",
     "id": 9,
+    "title":"Netflix",
     "description": "Enjoy the latest TV shows and movies.",
     "size": 60,
     "reviews": 140000000,
     "ratingAvg": 4.4,
-    "downloads": 10000,
+    "downloads":"144M",
     "ratings": [
       { "name": "1 star", "count": 30000 },
       { "name": "2 star", "count": 60000 },
       { "name": "3 star", "count": 150000 },
       { "name": "4 star", "count": 250000 },
       { "name": "5 star", "count": 350000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1683007002429-deabf420bbe5?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications, Inc.",
+    "id": 10,
+    "description": "Stay connected through seamless video conferencing, messaging, and webinars.",
+    "size": 115,
+    "reviews": 59000000,
+    "ratingAvg": 4.3,
+    "downloads": "70M",
+    "ratings": [
+      { "name": "1 star", "count": 2500000 },
+      { "name": "2 star", "count": 1200000 },
+      { "name": "3 star", "count": 5000000 },
+      { "name": "4 star", "count": 13000000 },
+      { "name": "5 star", "count": 37300000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1637593992672-ed85a851fdc3?q=80&w=1162&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "id": 11,
+    "description": "Stay connected with fast, organized email with Google’s secure service.",
+    "size": 90,
+    "reviews": 83000000,
+    "ratingAvg": 4.5,
+    "downloads": "80M",
+    "ratings": [
+      { "name": "1 star", "count": 2500000 },
+      { "name": "2 star", "count": 1500000 },
+      { "name": "3 star", "count": 6000000 },
+      { "name": "4 star", "count": 18000000 },
+      { "name": "5 star", "count": 55000000 }
+    ]
+  },
+   {
+    "image": "https://images.unsplash.com/photo-1663124178723-6544f98e0aae?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Play Store",
+    "companyName": "Google LLC",
+    "id": 12,
+    "description": "Discover and download millions of apps, games, music, and books for Android devices.",
+    "size": 80,
+    "reviews": 89000000,
+    "ratingAvg": 4.2,
+    "downloads": "120M",
+    "ratings": [
+      { "name": "1 star", "count": 3000000 },
+      { "name": "2 star", "count": 2000000 },
+      { "name": "3 star", "count": 7000000 },
+      { "name": "4 star", "count": 19000000 },
+      { "name": "5 star", "count": 58000000 }
     ]
   }
 ]
